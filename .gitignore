@@ -1,0 +1,9 @@
+node_modules/
+**/dist/
+**/*.log
+**/.vitepress/cache
+**/.cache
+**/.output
+**/.nitro
+**/.cache
+**/.env

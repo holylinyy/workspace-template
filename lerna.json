@@ -1,0 +1,18 @@
+{
+  "$schema": "node_modules/lerna/schemas/lerna-schema.json",
+  "version": "0.0.34",
+  "npmClient": "pnpm",
+  "allowBranch": [
+    "master"
+  ],
+  "command": {
+    "publish": {
+      "private": false,
+      "ignoreChanges": [
+        "*.md",
+        "*.txt",
+        "test/**"
+      ]
+    }
+  }
+}

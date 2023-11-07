@@ -1,0 +1,9 @@
+{
+  "name": "@todo/cz-conventional-changelog-zh",
+  "version": "0.0.1",
+  "main": "index.js",
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {},
+  "peerDependencies": {}
+}

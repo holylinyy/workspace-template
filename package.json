@@ -1,0 +1,42 @@
+{
+  "name": "todo-workspace",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "lerna run build",
+    "stub": "lerna run stub",
+    "release": "pnpm run lint && pnpm run build && lerna publish",
+    "test": "lerna run test",
+    "prepare": "husky install",
+    "taze": "npx taze latest -w -r ",
+    "lint": "nx run-many --target=lint",
+    "cz": "git-cz"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^18.2.0",
+    "@commitlint/config-conventional": "^18.1.0",
+    "@commitlint/load": "^18.2.0",
+    "@todo/eslint-config-custom-i18n": "workspace:*",
+    "commitizen": "^4.3.0",
+    "conventional-changelog-cli": "^4.1.0",
+    "eslint": "^8.53.0",
+    "husky": "^8.0.3",
+    "lerna": "^7.4.2",
+    "nx": "^17.0.3",
+    "pathe": "^1.1.1",
+    "prettier": "^3.0.3",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.2.2",
+    "unbuild": "^2.0.0",
+    "vitest": "^0.34.6"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./tools/cz-conventional-changelog-zh"
+    }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,39 @@
+{
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "nx/tasks-runners/default",
+      "options": {
+        "cacheableOperations": [
+          "build",
+          "stub",
+          "lint",
+          "test"
+        ]
+      }
+    }
+  },
+  "namedInputs": {
+    "default": [
+      "{projectRoot}/**/*"
+    ]
+  },
+  "targetDefaults": {
+    "build": {
+      "dependsOn": [
+        "^build"
+      ],
+      "outputs": [
+        "{workspaceRoot}/{projectRoot}/dist"
+      ]
+    },
+    "stub": {
+      "outputs": [
+        "{workspaceRoot}/{projectRoot}/dist"
+      ]
+    },
+    "lint": {
+      "inputs": ["{workspaceRoot}/{projectRoot}"]
+    }
+   
+  }
+}
