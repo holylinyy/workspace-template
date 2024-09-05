@@ -1,0 +1,29 @@
+{
+  "targetDefaults": {
+    "build": {
+      "cache": true,
+      "dependsOn": ["^build"],
+      "outputs": ["{projectRoot}/dist"]
+    },
+    "dev": {
+      "dependsOn": []
+    },
+    "lint": {
+      "cache": true,
+      "dependsOn": []
+    },
+    "stub": {
+      "cache": true,
+      "dependsOn": [],
+      "outputs": ["{projectRoot}/dist"]
+    },
+    "test": {
+      "cache": true,
+      "dependsOn": []
+    },
+    "test:unit": {
+      "cache": true,
+      "dependsOn": []
+    }
+  }
+}

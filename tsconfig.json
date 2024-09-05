@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "target": "es2022",
+    "module": "es2022",
+    "moduleResolution": "Node",
+    "declaration": true,
+    "inlineSourceMap": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "paths": {
+      "@uikit/i18n-tools": ["./packages/i18n-tools/src"],
+      "~/*": ["./apps/ui/src/*"]
+    }
+  },
+  "types": ["node"]
+}

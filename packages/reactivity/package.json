@@ -1,0 +1,20 @@
+{
+  "name": "@hltest/reactivity",
+  "version": "0.0.1",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "dev": "pnpm run stub",
+    "lint": "eslint --fix",
+    "stub": "unbuild --stub",
+    "test": "vitest --run",
+    "test:unit": "vitest"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
