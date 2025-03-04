@@ -23,13 +23,13 @@
     "eslint": "^8.53.0",
     "husky": "^8.0.3",
     "lerna": "^7.4.2",
+    "nodemon": "^3.1.9",
     "nx": "^17.0.3",
     "pathe": "^1.1.1",
     "prettier": "^3.0.3",
     "rimraf": "^5.0.5",
     "typescript": "^5.2.2",
-    "unbuild": "^2.0.0",
-    "vitest": "^0.34.6"
+    "unbuild": "^2.0.0"
   },
   "config": {
     "commitizen": {
@@ -38,5 +38,9 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "dayjs": "^1.11.13"
+  }
 }
